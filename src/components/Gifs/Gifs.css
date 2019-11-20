@@ -1,0 +1,7 @@
+.gifs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 77rem;
+  margin: 0 auto;
+}

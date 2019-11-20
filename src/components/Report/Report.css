@@ -1,0 +1,6 @@
+.report {
+  margin-top: 0.5rem;
+  animation-name: fadeOut;
+  animation-duration: 5s;
+  font-size: 0.8rem;
+}

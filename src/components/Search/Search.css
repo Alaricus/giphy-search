@@ -1,0 +1,57 @@
+.search {
+  margin: 2.5rem auto 2.5rem;
+  text-align: center;
+}
+
+form {
+  display: inline;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+  height: 1.9rem;
+  margin: 0;
+  border: 2px solid gray;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input[type=text] {
+  width: 12rem;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  padding-left: 0.25rem;
+  animation-name: nyancat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+input[type=text]:focus {
+  background-color: white;
+  animation-iteration-count: 0;
+}
+
+input[type=submit] {
+  padding: 1px 0.5rem;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background-color: #dddddd;
+}
+
+@keyframes nyancat {
+  0% { background-color: #ffe6e6; }
+  17% { background-color: #fff5e6; }
+  34% { background-color: #ffffe6; }
+  51% { background-color: #e6ffe6; }
+  68% { background-color: #e6ffff; }
+  85% { background-color: #e6f0ff; }
+  100% { background-color: #f2e6ff; }
+}
+
+@media (min-width: 500px) {
+  .search {
+    margin: 10rem auto 5rem;
+  }
+}
