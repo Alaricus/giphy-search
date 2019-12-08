@@ -1,6 +1,6 @@
 const runSearch = async (key, limit, term, callback, offset = 0) => {
   try {
-    const response = await fetch(`http://api.giphy.com/v1/gifs/search?q=${term}&api_key=${key}&limit=${limit}&offset=${offset}`);
+    const response = await fetch(`https://api.giphy.com/v1/gifs/search?q=${term}&api_key=${key}&limit=${limit}&offset=${offset}`);
     if (response.ok) {
       const result = await response.json();
       callback({ type: 'ADD_SEARCH', payload: { term, offset, result } });
